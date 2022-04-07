@@ -1,5 +1,7 @@
 # HP Procurve 2910al Switch Firmware Upgrade, via SSH
 
+Asciinema: https://asciinema.org/a/lI25HbwvQal93jbvbSsXSvY1u (Please ignore the first two seconds or so.) :)
+
 This tutorial is based on a switch that was factory reset, that you have the firmware files ready in a local TFTP server, and that you have or know how to obtain the switch's IP Number. See important links at the end.
 
 01. With an ethernet cable physical connect the switch to the local network, then turn the switch on.
@@ -70,4 +72,7 @@ Using Apple's SNTP server's IP, time.apple.com = 17.253.82.253:<br>
 <b>exit</b><br>
 <b>exit</b><br>
 
-========================================================================================================
+-------------------------------------------------------------------------------------------------------
+
+Thank you!
+
