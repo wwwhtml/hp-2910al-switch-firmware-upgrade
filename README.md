@@ -1,14 +1,14 @@
 # HP Procurve 2910al Switch Firmware Upgrade, via SSH
 
-Asciinema: https://asciinema.org/a/lI25HbwvQal93jbvbSsXSvY1u (Please ignore the first two seconds or so.) :)
+This tutorial is based on a switch that was factory reset, with the firmware files ready for download at a local TFTP server (192.168.0.193), and with switch's IP (192.168.0.184). See important links at the end.</
 
-This tutorial is based on a switch that was factory reset, that you have the firmware files ready in a local TFTP server, and that you have or know how to obtain the switch's IP Number. See important links at the end.
 
+STEPS:<br>
 01. With an ethernet cable physical connect the switch to the local network, then turn the switch on.
 
 02. From your computer connect the switch, for this tutorial the swith's IP is 192.168.0.184.
 If the switch could handle newer encryption, the command could be simply like this: ssh 192.168.0.184, but because it doesn't we have to do it this way: 
-<br><b>ssh -o KexAlgorithms=diffie-hellman-group1-sha1 -o Ciphers=aes256-cbc4 192.168.0.184</b>
+<br><b>ssh -o KexAlgorithms=diffie-hellman-group1-sha1 -o Ciphers=aes256-cbc4 192.168.0.184</b><br>
 
 03. Once connected, press ENTER.
 
@@ -38,6 +38,11 @@ If the switch could handle newer encryption, the command could be simply like th
 14. Press: <b>y</b>
 
 15. The install takes a minute or so to complete. 
+
+<p>Video:</p>
+<a href="https://asciinema.org/a/lI25HbwvQal93jbvbSsXSvY1u?t=8" target="_blank"><img src="https://asciinema.org/a/lI25HbwvQal93jbvbSsXSvY1u.svg" /></a>
+<p></p>
+
 
 -------------------------------------------------------------------------------------------------------
 
