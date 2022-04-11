@@ -1,6 +1,6 @@
 # HP Procurve 2910al Switch Firmware Upgrade, via SSH
 
-This tutorial is based on a switch that was factory reset, with the firmware files ready for download at a local TFTP server (192.168.0.193), and with switch's IP (192.168.0.184). See important links at the end.</
+This tutorial is based on a switch that was factory reset, with the firmware files ready for download at a local TFTP server (192.168.0.193), and with switch's IP (192.168.0.184). At the end link to firmware files, how to factory reset the HP switch, and the steps on how to configure the SNTP. <br>
 
 
 STEPS:<br>
@@ -17,10 +17,9 @@ If the switch could handle newer encryption, the command could be simply like th
 
 05. To see what version do you have running: <b>show version</b>
 
-06. To see what version is the primary and secondary firmware:<b>show flash</b>
+06. To see what version is the primary and secondary firmware: <b>show flash</b>
 
-07. To iniciate the download of the firmware from the TFTP server (for this tutorial the tftp server IP is 192.168.0.193, and firmware to upgrade is to w_15_14_0018.swi). example:<br>
-<b>copy tftp flash 192.168.0.193 W_15_14_0018.swi</b>
+07. To iniciate the download of the firmware from the TFTP server (for this tutorial the tftp server IP is 192.168.0.193, and firmware to upgrade is to w_15_14_0018.swi):<b> copy tftp flash 192.168.0.193 W_15_14_0018.swi</b>
 
 08. Then press ENTER.
 
@@ -28,10 +27,9 @@ If the switch could handle newer encryption, the command could be simply like th
 
 10. Press <b>1</b> to install it as the primary firmware.
 
-11. Once downloaded, to see the file set to be the primary firmware run:<b>show flash</b>
+11. Once downloaded, to see the file set to be the primary firmware run:<b> show flash</b>
 
-12. Then to reboot for the firmware to be applied on the primary memory run:
-<b>boot system flash primary</b>
+12. Then to reboot for the firmware to be applied on the primary memory run:<b> boot system flash primary</b>
 
 13.Press ENTER.
 
